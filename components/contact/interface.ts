@@ -5,4 +5,5 @@ export interface IInput {
   placeholder: string;
   Icon: IconType;
   type: string;
+  required?: boolean | undefined;
 }

@@ -5,9 +5,12 @@ import { TextCustom } from "../text_custom/text_custom";
 export const About = (): JSX.Element => {
   return (
     <>
-      <Section className="  md:h-1/2 text-white bg-secondary p-5 " id="about">
+      <Section
+        className="  md:h-1/2 text-white bg-secondary p-5 top-10 px-9"
+        id="about"
+      >
         <div className="flex justify-between items-center flex-col h-full gap-5">
-          <TextCustom className="text-3xl md:text-6xl " text="About Us" />
+          <TextCustom className="text-3xl md:text-6xl mt-10" text="About Us" />
           <div className="w-full md:w-1/2 ">
             <p className="text-gray-500  text-lg md:text-2xl  break-words ">
               {" "}
