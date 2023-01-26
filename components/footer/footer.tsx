@@ -11,8 +11,16 @@ export const Footer = (): JSX.Element => {
       <MapView />
 
       <div className="flex p-5 gap-5">
-        <Links Icon={BsFacebook} url="" color="hover:text-blue-500" />
-        <Links Icon={FaYelp} url="" color="hover:text-red-600 " />
+        <Links
+          Icon={BsFacebook}
+          url="https://www.facebook.com/fiddlesticksvh/"
+          color="hover:text-blue-500"
+        />
+        <Links
+          Icon={FaYelp}
+          url="https://www.yelp.com/biz/fiddlesticks-veterinary-hospital-fort-myers"
+          color="hover:text-red-600 "
+        />
       </div>
 
       <div className=" flex justify-center ">

@@ -6,7 +6,10 @@ export const Hero = (): JSX.Element => {
   return (
     <Section className=" bg-[url('/img/bg.png')] bg-no-repeat  bg-top lg:bg-[length:50%_47%]    bg-contain h-[90vh] mt-7 ">
       <div className="place-items-center grid h-full">
-        <div className=" lg:mt-10 w-1/2 lg:w-1/3 h-1/2  p-7 flex  flex-col justify-between  text-center items-center ">
+        <div
+          className=" lg:mt-10 w-1/2 lg:w-1/3 h-1/2  p-7 flex  flex-col justify-between  text-center items-center "
+          id="home"
+        >
           <span className=" md:mt-10 "></span>
           <TextCustom
             className="md:mt-12 md:text-5xl text-2xl"

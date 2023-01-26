@@ -9,10 +9,10 @@ import { FormEvent } from "react";
 
 export const Contact = (): JSX.Element => {
   return (
-    <Section className="h-full bg-primary" id="contact">
-      <div className="flex flex-col justify-center items-center h-full px-9 ">
+    <Section className="h-[135%]   bg-primary" id="contact">
+      <div className="flex flex-col justify-center items-center h-full px-9 gap-4 ">
         <TextCustom
-          className="p-4 md:text-6xl text-3xl mt-2"
+          className="p-4 md:text-6xl text-3xl mt-6 "
           text="Contact Us"
         />
 
@@ -32,10 +32,12 @@ const Form = (): JSX.Element => {
   };
   return (
     <form
-      className="p-2 space-y-5  flex justify-center flex-col items-center w-1/2 "
+      className="p-2 space-y-5  flex justify-center flex-col items-center w-full  md:w-1/2"
       onSubmit={handleSubmit}
     >
-      <h4 className="text-white">Reach out to us for your pets needs</h4>
+      <h4 className="text-white text-sm">
+        Reach out to us for your pets needs
+      </h4>
       <InputField
         name="name"
         type="text"
