@@ -3,7 +3,6 @@ import { ToastContainer } from "react-toastify";
 import { Footer } from "../footer/footer";
 import { Navbar } from "../navbar/navbar";
 import { ILayout } from "./interface";
-import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 
 export const Layout: FC<ILayout> = ({ children }) => {
@@ -14,7 +13,7 @@ export const Layout: FC<ILayout> = ({ children }) => {
     const { scrollHeight, scrollTop, clientHeight } = event.target;
     const scroll = scrollHeight - scrollTop - clientHeight;
 
-    if (scroll < 1000) {
+    if (scroll < 1300) {
       setColor("lg:text-white");
     } else {
       setColor("lg:text-black");

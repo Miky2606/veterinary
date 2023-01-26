@@ -9,7 +9,7 @@ import { FormEvent } from "react";
 
 export const Contact = (): JSX.Element => {
   return (
-    <Section className="h-[135%]   bg-primary" id="contact">
+    <Section className="h-[135%]    bg-primary" id="contact">
       <div className="flex flex-col justify-center items-center h-full px-9 gap-4 ">
         <TextCustom
           className="p-4 md:text-6xl text-3xl mt-6 "
@@ -32,7 +32,7 @@ const Form = (): JSX.Element => {
   };
   return (
     <form
-      className="p-2 space-y-5  flex justify-center flex-col items-center w-full  md:w-1/2"
+      className="p-2 space-y-5  flex justify-center flex-col items-center w-full   lg:w-1/2"
       onSubmit={handleSubmit}
     >
       <h4 className="text-white text-sm">
@@ -97,16 +97,18 @@ const TextTarea = (): JSX.Element => {
 
 const Info = (): JSX.Element => {
   return (
-    <div className="w-full md:w-1/2 h-full flex flex-col gap-2 md:gap-4 mt-2 md:mt-6 justify-center">
-      <h4 className="text-white text-1xl">
+    <div className="w-full  lg:w-1/2 h-full flex flex-col gap-2 md:gap-4 mt-2 md:mt-6 justify-center ">
+      <h4 className="text-white text-1xl md:text-2xl ">
         Call today to schedule an appointment
       </h4>
       <p className="text-gray-400">
         We are a new Veterinary Hospital that is located in the Fiddlesticks
         Publix Plaza on Daniels Pkwy near I-75.{" "}
       </p>
-      <h4 className="text-white text-1xl">Fiddlesticks Veterinary Hospital</h4>
-      <p className="text-gray-400">
+      <h4 className="text-white text-1x md:text-2xl">
+        Fiddlesticks Veterinary Hospital
+      </h4>
+      <p className="text-gray-400 ">
         13650 Fiddle Sticks Blvd Ste 203 Fort Myers FL 33912
       </p>
 
