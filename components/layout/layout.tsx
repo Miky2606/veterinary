@@ -1,13 +1,12 @@
 import { FC, useEffect, useState } from "react";
-import { ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import { Footer } from "../footer/footer";
 import { Navbar } from "../navbar/navbar";
 import { ILayout } from "./interface";
-import { toast } from "react-toastify";
 
 export const Layout: FC<ILayout> = ({ children }) => {
   const [color, setColor] = useState<string>("lg:text-black");
-  const [isLoaded, setIsLoaded] = useState(false);
+  //
 
   const handleScroll = (event: any) => {
     const { scrollHeight, scrollTop, clientHeight } = event.target;
@@ -29,6 +28,7 @@ export const Layout: FC<ILayout> = ({ children }) => {
   useEffect(() => {
     return () => {
       getDate();
+      console.log("yes");
     };
   }, []);
 
@@ -40,11 +40,7 @@ export const Layout: FC<ILayout> = ({ children }) => {
       <Navbar color={color} />
 
       {children}
-      <ToastContainer
-        position="top-center"
-        pauseOnFocusLoss={false}
-        autoClose={2000}
-      />
+
       <Footer />
     </div>
   );
