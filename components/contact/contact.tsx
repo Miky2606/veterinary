@@ -9,7 +9,7 @@ import { FormEvent } from "react";
 
 export const Contact = (): JSX.Element => {
   return (
-    <Section className="h-[135%]    bg-primary" id="contact">
+    <Section className="h-[135%]  lg:h-full  bg-primary" id="contact">
       <div className="flex flex-col justify-center items-center h-full px-9 gap-4 ">
         <TextCustom
           className="p-4 md:text-6xl text-3xl mt-6 "
