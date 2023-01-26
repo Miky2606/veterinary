@@ -26,10 +26,7 @@ export const Layout: FC<ILayout> = ({ children }) => {
   };
 
   useEffect(() => {
-    return () => {
-      console.log("yes");
-      getDate();
-    };
+    getDate();
   }, []);
 
   return (
