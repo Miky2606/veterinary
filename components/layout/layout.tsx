@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import { Footer } from "../footer/footer";
 import { Navbar } from "../navbar/navbar";
 import { ILayout } from "./interface";
@@ -27,8 +27,8 @@ export const Layout: FC<ILayout> = ({ children }) => {
 
   useEffect(() => {
     return () => {
-      getDate();
       console.log("yes");
+      getDate();
     };
   }, []);
 
