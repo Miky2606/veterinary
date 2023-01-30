@@ -34,7 +34,7 @@ export const MapView = (): JSX.Element => {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={14}
+      zoom={10}
       onLoad={onLoad}
       onUnmount={onUnmount}
     >

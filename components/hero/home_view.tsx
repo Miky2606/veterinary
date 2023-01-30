@@ -4,7 +4,7 @@ import { TextCustom } from "../text_custom/text_custom";
 import Link from "next/link";
 export const Hero = (): JSX.Element => {
   return (
-    <Section className=" bg-[url('/img/bg.png')] bg-no-repeat  bg-top lg:bg-[length:50%_47%]    bg-contain h-[90vh] mt-7 ">
+    <Section className=" bg-[url('/img/bg.png')] bg-no-repeat  bg-bottom md:bg-top lg:bg-[length:50%_47%]    bg-contain h-[90vh] mt-7 ">
       <div className="place-items-center grid h-full">
         <div
           className=" lg:mt-10 w-1/2 lg:w-1/3 h-1/2  p-7 flex  flex-col justify-between  text-center items-center "
@@ -12,7 +12,7 @@ export const Hero = (): JSX.Element => {
         >
           <span className=" md:mt-10 "></span>
           <TextCustom
-            className="md:mt-12 md:text-5xl text-2xl"
+            className="md:mt-4 text-2xl md:text-5xl"
             text="Our animal hospital is ready to care for your pet today."
           />
           <IconsArrow />

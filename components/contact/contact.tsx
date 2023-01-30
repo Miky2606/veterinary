@@ -9,18 +9,19 @@ import { FormEvent } from "react";
 
 export const Contact = (): JSX.Element => {
   return (
-    <Section className="h-[135%]  lg:h-full  bg-primary" id="contact">
-      <div className="flex flex-col justify-center items-center h-full px-9 gap-4 ">
-        <TextCustom
-          className="p-4 md:text-6xl text-3xl mt-6 "
-          text="Contact Us"
-        />
+    <Section
+      className="h-[135%]  lg:h-full  bg-primary flex flex-col justify-center items-center  px-9 gap-4  "
+      id="contact"
+    >
+      <TextCustom
+        className="p-4 md:text-6xl text-3xl mt-6   "
+        text="Contact Us"
+      />
 
-        <div className="flex flex-col lg:flex-row md:justify-center  items-center  md:px-6  w-full justify-center  md:w-3/4  md:h-3/4 h-full">
-          <Form />
-          <hr className="hidden bg-white lg:block h-1/2 border-[0.2px] ml-6 mr-6" />
-          <Info />
-        </div>
+      <div className="flex flex-col lg:flex-row md:justify-center  items-center  md:px-6  w-full justify-center  md:w-3/4  md:h-3/4 h-full">
+        <Form />
+        <hr className="hidden bg-white lg:block h-1/2 border-[0.2px] ml-6 mr-6" />
+        <Info />
       </div>
     </Section>
   );

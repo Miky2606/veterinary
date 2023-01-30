@@ -7,7 +7,7 @@ export const Section: FC<ISection> = ({
   id,
 }): JSX.Element => {
   return (
-    <section className={`${className} w-full `} id={id}>
+    <section className={`${className} w-full overflow-auto `} id={id}>
       {children}
     </section>
   );
